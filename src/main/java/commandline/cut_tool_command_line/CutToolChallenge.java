@@ -65,8 +65,7 @@ public class CutToolChallenge {
         if (fileToRead.getName().contains("csv")) {
             String regexForCSV = "\n";
             ArrayList<String[]> csvReader = MyFileReader.readFileLineByLineAndReturnArrayList(fileToRead, regexForCSV);
-            int listSize = PrintCSVContent.printCommaSeparatedAccordingToCommand(userCutCommand, tabContentToFind, limit, csvReader);
-            System.out.println(listSize);
+            PrintCSVContent.printCommaSeparatedAccordingToCommand(userCutCommand, tabContentToFind, limit, csvReader);
         }
 
 
